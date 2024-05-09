@@ -3,12 +3,12 @@
 ### Respositório destinado a armazenar os conteúdos demonstrados do bootcamp da DIO
  - ### Tópicos apresentados no programa
  - 💻 Princípios de Desenvolvimento de Software Colaborativo.
- - ☕ Dominando a linguagem de programação Java
+ - ☕ Dominando a Linguagem de Programação Java
  - ♟️ POO
  - ❇️ Testes e Gerenciamento de Dependências em Projestos Java
  - 🎲 Banco de Dados SQL e NoSql
- - 🍃 Ganhando produtividade com o Spring Framework
- - 🔷 Soft Skills na Era Agil
+ - 🍃 Ganhando Produtividade com o Spring Framework
+ - 🔷 Soft Skills na Era Ágil
 
  ## Tecnologias utilizadas no programa
  ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
