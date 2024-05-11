@@ -6,8 +6,12 @@ import java.util.NoSuchElementException;
 
 public class CarrinhoDeCompras {
     
-    private List<Item> carrinho = new ArrayList<>();
+    private List<Item> carrinho;
 
+    public CarrinhoDeCompras(){
+    this.carrinho = new ArrayList<>();
+    }
+    
     public void adicionarItem(String nome, double valor, int qtd){
         Item item =  new Item(nome, valor, qtd);
         carrinho.add(item);
