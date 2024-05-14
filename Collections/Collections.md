@@ -29,3 +29,11 @@
 - A interface ``Set`` não permite acesso aleatórioa um elemnto na coleção
 
 - Para percorrer os elementos de um ``Set``, você pode usar um Iterador ou um loop foreach
+
+### Map
+
+- Não implementa ``Iterable``
+- É usada para mapear dados na forma de chave e valores.
+- P Map do Java é um obejto que mapeia chave para valores.
+- Um Map não pode conter chaves duplicadas: cada chave pode mapear no máximo um valor.
+- A plataforma Java possui **3 implementações gerais:** ``HashMap``, ``TreeMap`` e ``LinkedHashMap``
