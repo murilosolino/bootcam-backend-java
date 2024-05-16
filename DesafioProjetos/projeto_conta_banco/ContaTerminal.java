@@ -1,4 +1,4 @@
-package projeto_conta_banco;
+package DesafioProjetos.projeto_conta_banco;
 
 import java.util.Scanner;
 
