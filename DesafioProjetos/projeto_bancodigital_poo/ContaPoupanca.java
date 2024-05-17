@@ -27,7 +27,7 @@ public class ContaPoupanca extends Conta {
 
         double saldoAposRendimento = saldoAtual + rendimentoMensal;
 
-        System.out.println("Seu saldo após " + qtdMeses + "meses de rendimento será de: " + saldoAposRendimento);
+        System.out.println("Seu saldo após " + qtdMeses + " meses de rendimento será de: " + saldoAposRendimento);
 
     }
 

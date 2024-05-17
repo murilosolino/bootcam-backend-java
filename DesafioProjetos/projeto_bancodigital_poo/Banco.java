@@ -44,9 +44,14 @@ public class Banco {
         
     }
 
+    
     public void listarContasContas(){
         for (Conta c : listaContas) {
-            System.out.println(c.toString());
+            if (c instanceof ContaCorrente){
+            System.out.println("Conta Corrente: " + c.toString());
+            } else {
+                System.out.println("Conta Poupança: " + c.toString());
+            }
         }
     }
 

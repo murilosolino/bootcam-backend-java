@@ -109,7 +109,7 @@ public class App {
                                     JOptionPane.showMessageDialog(null, "Operação cancelada!");
                                 }
 
-                            } 
+                            }
                         }
 
                         if (!clienteEncontrado) {
@@ -157,7 +157,7 @@ public class App {
                         }
                         banco.listarContasContas();
                     } catch (NoSuchElementException e) {
-                        System.err.println("Nao há registros de contas.");
+                        System.err.println("\nNao há registros de contas.");
                     }
 
                     break;
@@ -169,14 +169,25 @@ public class App {
                         }
                         banco.listarClientes();
                     } catch (NoSuchElementException e) {
-                        System.err.println("Nao há registros de contas.");
+                        System.err.println("\nNao há registros de contas.");
                     }
 
                     break;
                 case 7:
-                    for (Cliente c : clientes) {
-                        System.out.println(c.toString());
+
+                    try {
+                        if (clientes.isEmpty()) {
+                            throw new NoSuchElementException();
+                        }
+
+                        for (Cliente c : clientes) {
+                            System.out.println(c.toString());
+                        }
+
+                    } catch (NoSuchElementException e) {
+                        System.err.println("\nNão há registros de Clientes Cadastrados");
                     }
+
                     break;
                 case 8:
                     // Código para operações bancárias
@@ -198,7 +209,8 @@ public class App {
                                             "2. Sacar \n" +
                                             "3. Transferir \n" +
                                             "4. Consultar Saldo \n" +
-                                            "5. Consultar extrato"));
+                                            "5. Consultar extrato \n" +
+                                            "6. Calcular Rendimento (Somente Conta Poupança)"));
 
                             switch (operacao) {
                                 case 1:
@@ -237,10 +249,29 @@ public class App {
 
                                     break;
                                 case 4:
+
                                     JOptionPane.showMessageDialog(null, "Saldo: " + conta.getSaldo());
                                     break;
+
                                 case 5:
+
                                     conta.imprimrExtrato();
+                                    break;
+
+                                case 6:
+
+                                    if (conta instanceof ContaPoupanca) {
+
+                                        String meses = JOptionPane.showInputDialog(null,
+                                                "Deseja verificar seu saldo na poupança após quantos meses de rendimento?");
+
+                                        int qtdMeses = Integer.parseInt(meses);
+
+                                        ContaPoupanca contaPoupanca = (ContaPoupanca) conta;
+                                        contaPoupanca.calculaRendimentoMensal(qtdMeses);
+                                    } else {
+                                        System.err.println("O número da conta deve fazer referência a uma Conta Poupança");
+                                    }
                                     break;
                                 default:
                                     JOptionPane.showMessageDialog(null, "Operação inválida!");
