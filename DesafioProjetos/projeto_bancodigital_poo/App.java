@@ -226,7 +226,7 @@ public class App {
                                         conta.sacar(valorSaque);
                                         JOptionPane.showMessageDialog(null, "Saque realizado com sucesso!");
                                     } catch (IllegalArgumentException e) {
-                                        System.err.println("Saldo insuficiente");
+                                        JOptionPane.showMessageDialog(null, "Saldo insuficiente para saque");
                                     }
 
                                     break;
@@ -244,7 +244,7 @@ public class App {
                                         conta.transferir(valorTransferencia, contaDestino);
                                         JOptionPane.showMessageDialog(null, "Transferência realizada com sucesso!");
                                     } catch (IllegalArgumentException e) {
-                                        System.err.println("Saldo insuficiente para realizar transfêrencia");
+                                        JOptionPane.showMessageDialog(null, "Saldo insuficiente para transferencia");
                                     }
 
                                     break;
@@ -308,7 +308,7 @@ public class App {
         System.out.println("5. Listar contas");
         System.out.println("6. Listar Clientes Com Contas Abertas");
         System.out.println("7. Listar Clientes");
-        System.out.println("8.  Operações Bancarias");
+        System.out.println("8. Operações Bancarias");
         System.out.println("0. Sair");
         System.out.print("Escolha uma opção: ");
 
