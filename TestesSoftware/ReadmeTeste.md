@@ -46,3 +46,95 @@
 | Pergunta central       | "Estamos construindo o produto corretamente?"  | "Estamos construindo o produto certo?"    |
 | Métodos                | Revisões, inspeções, análises estáticas        | Testes funcionais, testes de usabilidade  |
 | Quando ocorre          | Durante todo o ciclo de desenvolvimento        | Principalmente no final do ciclo de desenvolvimento |
+
+
+## Níveis de Teste
+
+  ### Unidade, Integração, Sistema, Regressão e Aceitação
+
+**Unidade**: Teste relacionados a pequenas unidades de software.
+
+**Integração** : Voltado para validar estruturas maiors do software. Simulação de APIs, chamadas para sistemas externos, Chamada ao Banco de Dados.
+
+**Sistema**: Validações de funcionalidades via usuários em ambiente de Homologação.
+
+**Regressão**:  Faz a reavaliação do que foi desenvolvido. Validação de novas features.
+
+**Aceitação**: Usuário faz validações em ambiente de produção.
+
+### Testes Alpha, Beta e Cannary
+
+**Alpha**: Teste Aplha, início do softwares com pessoas selecionadas para realizar a validação do sistema
+
+**Beta**: Teste Beta, abrange mais pessoas, disponibiliza uma versão inical para os  cliente realizarem validações. 
+
+**Cannary**: Seguementa os usuários para testar novas versões, é aplicada em ambiente de produção.
+
+## Técnicas de Testes
+
+### Caixa Branca
+
+- Teste estrtutural
+- Validar dados, controle Fluxos, Chamadas
+- Garantir a qualidade da implementação
+- Níveis: Unidade,Integração e Regressão
+
+### Caixa Preta
+
+- Teste Funcional
+- Verificar as saídas usando vários tipos de entrada
+- Teste sem conhecer a estrutura interna do software
+- Níveis: Integração, Sistema e Aceitação
+
+### Caixa Cinza
+
+- Mescla as técnicas da caixa branca e preta
+- Analisa a parte lógica e também funcionalidade
+- Ter acesso a documentação do código
+- Engenharia Reversa
+
+## Testes Não Funcionais
+
+### Testes não funcionais estão ligados a requisitos não funcionais
+
+- Comportamento do Sistema
+- Performance
+- Escaliabilidade
+- Segurança
+- Infraestrtutura
+- 
+ - [x] Testes não funcionais tem como Objetivo testar aspectos do software que não são associados as regras de negócio mas sim a requisitos não funcionais 
+ - [x] Ferramentas que usam técnicas para apurar o comportamento do sistema em determinadas circunstâncias.
+  
+  ### Teste de Carga
+
+  - [x] O teste de carga é realizado para verificar qual o volume de transações acessos simultâneos ou usuários que um servidor / software / sistema suporta.
+
+  ### Teste  de Stress
+
+  - [x]  O teste de stress é realizado para submeter o software a situações extremas. Baseia-se em testar os limites do softwares e avaliar seu comportamento.  
+
+  ### Teste de Segurança
+  - [x] O teste de segurança é um processo crítico de segurança cibernética que visa detectar a vulnerabilidades em sistemas, softwares, redes e aplicativos.
+
+## Pirâmide de Testes
+
+### Testes Unitários
+
+Testam unidades individuais de código (por exemplo, funções ou métodos).
+São rápidos de executar.
+Devem ser numerosos para cobrir todas as partes críticas do código.
+
+### Testes de Integração
+
+Testam a interação entre diferentes partes do sistema (por exemplo, entre módulos ou serviços).
+São mais lentos que os testes unitários.
+Devem ser usados para garantir que as partes do sistema funcionam bem juntas.
+
+### Testes de Ponta a Ponta (End-to-End)
+
+Testam o sistema como um todo, do início ao fim.
+São os mais lentos e difíceis de manter.
+Devem ser limitados em número, mas são essenciais para garantir que o sistema funcione corretamente do ponto de vista do usuário final.
+
+
