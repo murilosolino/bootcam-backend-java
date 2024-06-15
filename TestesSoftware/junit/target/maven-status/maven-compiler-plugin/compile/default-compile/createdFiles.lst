@@ -1,2 +1,4 @@
+com\digitalinnovation\Conta.class
+com\digitalinnovation\GerenciadorDeConexaoComBancoDeDados.class
 com\digitalinnovation\Pessoa.class
-com\digitalinnovation\Main.class
+com\digitalinnovation\TransferenciaEntreContas.class

@@ -9,6 +9,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.digitalinnovation.MOCKITO.GerenciadorDeConexaoComBancoDeDados;
+
 public class AfterBeforeTeste {
      @BeforeAll
     static void configuraConexao() {

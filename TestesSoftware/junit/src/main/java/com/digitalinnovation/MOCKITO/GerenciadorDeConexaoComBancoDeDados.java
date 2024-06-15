@@ -1,6 +1,8 @@
-package com.digitalinnovation;
+package com.digitalinnovation.MOCKITO;
 
 import java.util.logging.Logger;
+
+import com.digitalinnovation.Pessoa;
 
 public class GerenciadorDeConexaoComBancoDeDados {
     
